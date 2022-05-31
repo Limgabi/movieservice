@@ -13,12 +13,11 @@ function List() {
     const response = await fetch(`https://yts.mx/api/v2/list_movies.json?page=${num}&${genre}&sort_by=year`);
     const json = await response.json();
     setMovies(json.data.movies);
-    console.log(movies)
     setLoading(false);
   }
   useEffect(() => {
     getMovies();
-  }, []);
+  }, [movies]);
 
   return (
     <div className={styles.container}>
