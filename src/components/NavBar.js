@@ -23,7 +23,7 @@ function NavBar() {
       <ul className="menu">
         {navList.map(({ title, path }) => (
             <li>
-              <Link to={`/detail/${path}/1`} style={{ textDecoration: 'none', color: "black" }}>{title}</Link>
+              <Link to={`/movie/${path}/1`} style={{ textDecoration: 'none', color: "black" }}>{title}</Link>
             </li>
         ))}
       </ul>

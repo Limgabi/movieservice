@@ -5,12 +5,12 @@ import NavBar from "../components/NavBar";
 import styles from "./Home.module.css";
 
 function List() {
-  const { num, detail } = useParams();
+  const { num, genre } = useParams();
   const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([]);
-  
+
   const getMovies = async () => {
-    const response = await fetch(`https://yts.mx/api/v2/list_movies.json?page=${num}&${detail}&sort_by=year`);
+    const response = await fetch(`https://yts.mx/api/v2/list_movies.json?page=${num}&${genre}&sort_by=year`);
     const json = await response.json();
     setMovies(json.data.movies);
     console.log(movies)
