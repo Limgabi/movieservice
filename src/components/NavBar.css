@@ -1,0 +1,22 @@
+.navigation {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 66px;
+  z-index: 19;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 64px;
+  transition: 0.8s;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+
+.menu li {
+  padding: 4px 12px;
+  font-size: 16px;
+}
