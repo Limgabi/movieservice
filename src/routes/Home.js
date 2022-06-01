@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Loading from "../components/Loading";
 import Movie from "../components/Movie";
 import NavBar from "../components/NavBar";
 import styles from "./Home.module.css";
@@ -20,9 +21,7 @@ function Home() {
     <div className={styles.container}>
       <NavBar />
       {loading ? (
-        <div className={styles.loader}>
-          <span>Loading...</span>
-        </div>
+        <Loading/>
       ) : (<div className={styles.movies}>
         {movies.map((movie) => (
           <Movie
