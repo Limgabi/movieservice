@@ -27,7 +27,6 @@ function NavBar() {
             </li>
         ))}
       </ul>
-      <div className="admin"><span>로그인</span> <span>좋아요</span></div>
     </nav>
   )
 }
