@@ -26,6 +26,8 @@
 @media screen and (max-width: 767px) {
   .movie {
     flex-direction: column;
-    margin: 22px auto;
+    top: 20%;
+    left: 25%;
+    transform: none;
   }
 }
